@@ -1,4 +1,3 @@
-const { json } = require('sequelize')
 const { getAll } = require('../services/users')
 
 const index = async (req, res, next) => {
