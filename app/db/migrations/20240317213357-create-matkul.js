@@ -12,8 +12,15 @@ module.exports = {
       nameMatkul: {
         type: Sequelize.STRING
       },
-      deskripsi: {
+      description: {
         type: Sequelize.STRING
+      },
+      dayId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Days',
+          key: 'id'
+        }
       },
       createdAt: {
         allowNull: false,

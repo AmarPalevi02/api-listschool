@@ -25,9 +25,11 @@ app.get('/', (req, res) => {
 
 const routeUsers = require('./app/users/router')
 const routeMatkul = require('./app/matkul/router')
+const routeDays = require('./app/days/router')
 
 app.use(routeUsers)
 app.use(routeMatkul)
+app.use(routeDays)
 
 
 // catch 404 and forward to error handler

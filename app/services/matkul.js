@@ -12,11 +12,12 @@ const getAll = async (next) => {
 
 const createMatkul = async (req, next) => {
    try {
-      const { nameMatkul, deskripsi } = req.body
+      const { nameMatkul, description, dayId } = req.body
 
       const result = await Matkul.create({
          nameMatkul,
-         deskripsi,
+         description,
+         dayId,
          createdAt: new Date(),
          updatedAt: new Date()
       })
