@@ -4,6 +4,6 @@ const { index, create } = require('./controller')
 const { validationCreate } = require('./validator')
 
 route.get('/day', index)
-route.post('/day/create', validationCreate, create)
+route.post('/day/create',  create)
 
 module.exports = route
